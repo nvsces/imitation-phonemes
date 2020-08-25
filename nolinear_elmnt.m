@@ -1,3 +1,6 @@
+%The function passes the input signal through a nonlinear element
+%coefficients are set randomly to generate the standard deviation
+
 function out=nolinear_elmnt(input)
 a=100*rand;
 b=100*rand;

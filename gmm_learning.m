@@ -8,7 +8,7 @@ if nargin<5 numcf=16;end
 for j=1:32
     cf=[];
     for i=1:20
-    sig_in=genStdSig(t,fs,f,fir_coefs,j,1);
+    sig_in=genStdSig(t,fs,f,fir_coefs,j,0);%1->0
     cf_temp=mfcc_my(sig_in,fs,fft_size,numcf,0);
     cf=[cf;cf_temp];
     end

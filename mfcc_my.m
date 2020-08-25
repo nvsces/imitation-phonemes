@@ -1,3 +1,13 @@
+%The function calculates the MFCC of the signal
+
+%sig_in   - input signal
+%fs       - sample rate
+%fft_size - length of the FFT
+%numcf    - number of MFCC coefficients
+
+%coef     - MFCC
+
+
 function coef=mfcc_my(sig_in,fs,fft_size,numcf,dsp)
 
 fft_sig=fft(sig_in,fft_size);
